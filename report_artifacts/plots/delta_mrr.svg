@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="490.0" y="28" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">Mean ΔMRR by Method</text>
+<text x="18" y="210.0" transform="rotate(-90 18 210.0)" text-anchor="middle" font-family="Arial" font-size="13">Mean ΔMRR</text>
+<line x1="72" y1="251.59" x2="952" y2="251.59" stroke="#555" stroke-width="1"/>
+<line x1="72" y1="54" x2="72" y2="326" stroke="#222" stroke-width="1"/>
+<line x1="67" y1="326.00" x2="72" y2="326.00" stroke="#222"/>
+<text x="63" y="330.00" text-anchor="end" font-family="Arial" font-size="11">-0.18</text>
+<line x1="72" y1="326.00" x2="952" y2="326.00" stroke="#eeeeee"/>
+<line x1="67" y1="258.00" x2="72" y2="258.00" stroke="#222"/>
+<text x="63" y="262.00" text-anchor="end" font-family="Arial" font-size="11">-0.02</text>
+<line x1="72" y1="258.00" x2="952" y2="258.00" stroke="#eeeeee"/>
+<line x1="67" y1="190.00" x2="72" y2="190.00" stroke="#222"/>
+<text x="63" y="194.00" text-anchor="end" font-family="Arial" font-size="11">0.15</text>
+<line x1="72" y1="190.00" x2="952" y2="190.00" stroke="#eeeeee"/>
+<line x1="67" y1="122.00" x2="72" y2="122.00" stroke="#222"/>
+<text x="63" y="126.00" text-anchor="end" font-family="Arial" font-size="11">0.31</text>
+<line x1="72" y1="122.00" x2="952" y2="122.00" stroke="#eeeeee"/>
+<line x1="67" y1="54.00" x2="72" y2="54.00" stroke="#222"/>
+<text x="63" y="58.00" text-anchor="end" font-family="Arial" font-size="11">0.47</text>
+<line x1="72" y1="54.00" x2="952" y2="54.00" stroke="#eeeeee"/>
+<rect x="122.00" y="251.59" width="34.00" height="74.41" fill="#2f6f9f"/>
+<text x="139.00" y="340.00" text-anchor="middle" font-family="Arial" font-size="10">-0.18</text>
+<rect x="164.00" y="54.00" width="34.00" height="197.59" fill="#d07a2d"/>
+<text x="181.00" y="48.00" text-anchor="middle" font-family="Arial" font-size="10">0.47</text>
+<text x="160.00" y="362" text-anchor="middle" font-family="Arial" font-size="12">shapley</text>
+<rect x="298.00" y="161.14" width="34.00" height="90.45" fill="#2f6f9f"/>
+<text x="315.00" y="155.14" text-anchor="middle" font-family="Arial" font-size="10">0.22</text>
+<rect x="340.00" y="218.09" width="34.00" height="33.50" fill="#d07a2d"/>
+<text x="357.00" y="212.09" text-anchor="middle" font-family="Arial" font-size="10">0.08</text>
+<text x="336.00" y="362" text-anchor="middle" font-family="Arial" font-size="12">score</text>
+<rect x="474.00" y="230.13" width="34.00" height="21.47" fill="#2f6f9f"/>
+<text x="491.00" y="224.13" text-anchor="middle" font-family="Arial" font-size="10">0.05</text>
+<rect x="516.00" y="149.11" width="34.00" height="102.49" fill="#d07a2d"/>
+<text x="533.00" y="143.11" text-anchor="middle" font-family="Arial" font-size="10">0.25</text>
+<text x="512.00" y="362" text-anchor="middle" font-family="Arial" font-size="12">random</text>
+<rect x="650.00" y="251.59" width="34.00" height="55.08" fill="#2f6f9f"/>
+<text x="667.00" y="320.68" text-anchor="middle" font-family="Arial" font-size="10">-0.13</text>
+<rect x="692.00" y="72.56" width="34.00" height="179.04" fill="#d07a2d"/>
+<text x="709.00" y="66.56" text-anchor="middle" font-family="Arial" font-size="10">0.43</text>
+<text x="688.00" y="362" text-anchor="middle" font-family="Arial" font-size="12">first</text>
+<rect x="826.00" y="155.36" width="34.00" height="96.23" fill="#2f6f9f"/>
+<text x="843.00" y="149.36" text-anchor="middle" font-family="Arial" font-size="10">0.23</text>
+<rect x="868.00" y="223.87" width="34.00" height="27.72" fill="#d07a2d"/>
+<text x="885.00" y="217.87" text-anchor="middle" font-family="Arial" font-size="10">0.07</text>
+<text x="864.00" y="362" text-anchor="middle" font-family="Arial" font-size="12">last</text>
+<rect x="730" y="42" width="14" height="14" fill="#2f6f9f"/>
+<text x="750" y="54" font-family="Arial" font-size="12">necessary</text>
+<rect x="846" y="42" width="14" height="14" fill="#d07a2d"/>
+<text x="866" y="54" font-family="Arial" font-size="12">sufficient</text>
+</svg>

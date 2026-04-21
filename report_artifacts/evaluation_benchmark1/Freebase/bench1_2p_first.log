@@ -1,0 +1,31 @@
+2026-04-20 08:09:22,402 [INFO] Logging to evaluation_benchmark1/Freebase/bench1_2p_first.log and console.
+2026-04-20 08:09:22,402 [INFO] Evaluating explanations using first on Freebase KG
+2026-04-20 08:09:22,402 [INFO] Model path: models/FB15k-237-model-rank-1000-epoch-100-1602508358.pt
+2026-04-20 08:09:31,720 [INFO] Dataset and Graphs are set up.
+2026-04-20 08:09:33,528 [INFO] Queries are loaded.
+2026-04-20 08:09:33,528 [INFO] There are 474 relations in the dataset.
+2026-04-20 08:09:35,400 [INFO] XCQA model is initialized (normalize=False)
+2026-04-20 08:09:35,401 [INFO] Processing query type: 2p
+2026-04-20 08:09:35,401 [INFO] Limited 2p to 2000 queries
+2026-04-20 08:15:50,087 [INFO] 
+=== Metrics Summary for query type: 2p ===
+2026-04-20 08:15:50,090 [INFO] MRR   : before=0.2490 | after=0.2310 | Δ=-0.0180
+2026-04-20 08:15:50,092 [INFO] HIT_1 : before=0.1673 | after=0.1530 | Δ=-0.0143
+2026-04-20 08:15:50,094 [INFO] HIT_3 : before=0.2706 | after=0.2477 | Δ=-0.0230
+2026-04-20 08:15:50,096 [INFO] HIT_10: before=0.4188 | after=0.3938 | Δ=-0.0250
+2026-04-20 08:15:50,096 [INFO] Condition satisfaction: avg per-query = 20.7140, total satisfied = 41428, total queries = 2000
+2026-04-20 08:15:50,096 [INFO] ================================================================================
+
+2026-04-20 08:15:50,097 [INFO] 
+=== Metrics Summary for query type: 2p ===
+2026-04-20 08:15:50,100 [INFO] MRR   : before=0.0181 | after=0.2039 | Δ=+0.1858
+2026-04-20 08:15:50,101 [INFO] HIT_1 : before=0.0172 | after=0.1679 | Δ=+0.1507
+2026-04-20 08:15:50,102 [INFO] HIT_3 : before=0.0181 | after=0.2179 | Δ=+0.1998
+2026-04-20 08:15:50,104 [INFO] HIT_10: before=0.0182 | after=0.2847 | Δ=+0.2666
+2026-04-20 08:15:50,105 [INFO] Condition satisfaction: avg per-query = 20.7140, total satisfied = 41428, total queries = 2000
+2026-04-20 08:15:50,105 [INFO] ================================================================================
+
+2026-04-20 08:15:50,105 [INFO] Finished processing query type: 2p
+2026-04-20 08:15:50,105 [INFO] --------------------------------------------------------------------------------
+2026-04-20 08:15:50,560 [INFO] ✅ Saved all intermediate steps to evaluation_benchmark1/Freebase/bench1_2p_first_necessary.csv
+2026-04-20 08:15:51,033 [INFO] ✅ Saved all intermediate steps to evaluation_benchmark1/Freebase/bench1_2p_first_sufficient.csv
