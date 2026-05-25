@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Cấu trúc project CQD-SHAP</title>
+  <desc id="desc">Infographic tóm tắt cấu trúc repo CQD-SHAP, các nhóm file chính, luồng chạy evaluation và nơi lưu kết quả.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f9fc; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 800; fill: #172033; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 20px; fill: #5f6c80; }
+      .section-title { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 800; fill: #172033; }
+      .card-title { font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: 800; fill: #172033; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #344054; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #667085; }
+      .mono { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 15px; fill: #253858; }
+      .mono-strong { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 15px; font-weight: 800; fill: #172033; }
+      .pill { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; fill: #172033; }
+      .card { fill: #ffffff; stroke: #d8e0ec; stroke-width: 1.4; }
+      .flow-card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+      .arrow { stroke: #667085; stroke-width: 2.2; fill: none; marker-end: url(#arrowhead); }
+      .muted-line { stroke: #d8e0ec; stroke-width: 1.2; }
+      .blue { fill: #e8f2ff; stroke: #8fc2ff; }
+      .green { fill: #e9f8ef; stroke: #8dd7a6; }
+      .orange { fill: #fff1e3; stroke: #ffc27a; }
+      .purple { fill: #f0eaff; stroke: #b8a2ff; }
+      .red { fill: #fff0f1; stroke: #ffabb6; }
+      .gray { fill: #f2f4f7; stroke: #cbd5e1; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#667085"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1080"/>
+
+  <text class="title" x="80" y="76">Cấu trúc project CQD-SHAP</text>
+  <text class="subtitle" x="80" y="111">Từ paper và setup đến evaluation, log, CSV và biểu đồ dùng cho báo cáo thực nghiệm</text>
+
+  <g transform="translate(80,148)">
+    <rect class="flow-card" x="0" y="0" width="1440" height="184" rx="18"/>
+    <text class="section-title" x="30" y="45">Luồng làm việc chính</text>
+
+    <g transform="translate(32,70)">
+      <rect class="blue" x="0" y="0" width="214" height="82" rx="14"/>
+      <text class="card-title" x="20" y="31">1. Đọc paper</text>
+      <text class="mono" x="20" y="57">cqd.txt, README.md</text>
+    </g>
+
+    <path class="arrow" d="M258 111 H327"/>
+
+    <g transform="translate(338,70)">
+      <rect class="green" x="0" y="0" width="214" height="82" rx="14"/>
+      <text class="card-title" x="20" y="31">2. Setup env</text>
+      <text class="mono" x="20" y="57">requirements.txt</text>
+    </g>
+
+    <path class="arrow" d="M564 111 H633"/>
+
+    <g transform="translate(644,70)">
+      <rect class="orange" x="0" y="0" width="214" height="82" rx="14"/>
+      <text class="card-title" x="20" y="31">3. Data + model</text>
+      <text class="mono" x="20" y="57">data/, models/</text>
+    </g>
+
+    <path class="arrow" d="M870 111 H939"/>
+
+    <g transform="translate(950,70)">
+      <rect class="purple" x="0" y="0" width="214" height="82" rx="14"/>
+      <text class="card-title" x="20" y="31">4. Evaluation</text>
+      <text class="mono" x="20" y="57">evaluation.py</text>
+    </g>
+
+    <path class="arrow" d="M1176 111 H1245"/>
+
+    <g transform="translate(1256,70)">
+      <rect class="red" x="0" y="0" width="152" height="82" rx="14"/>
+      <text class="card-title" x="20" y="31">5. Kết quả</text>
+      <text class="mono" x="20" y="57">logs, CSV, SVG</text>
+    </g>
+  </g>
+
+  <g transform="translate(80,380)">
+    <rect class="card" x="0" y="0" width="450" height="270" rx="18"/>
+    <rect class="blue" x="22" y="22" width="122" height="32" rx="16"/>
+    <text class="pill" x="45" y="44">Tài liệu</text>
+    <text class="section-title" x="22" y="86">Paper, hướng dẫn và báo cáo</text>
+    <line class="muted-line" x1="22" y1="105" x2="428" y2="105"/>
+    <text class="mono-strong" x="28" y="136">cqd.txt</text>
+    <text class="body" x="160" y="136">Nội dung paper: bài toán, CQD-SHAP, Table 2.</text>
+    <text class="mono-strong" x="28" y="171">README.md</text>
+    <text class="body" x="160" y="171">Setup, download data/model, command chạy.</text>
+    <text class="mono-strong" x="28" y="206">REPORT_TEMPLATE.md</text>
+    <text class="body" x="185" y="206">Khung ghi lại thí nghiệm.</text>
+    <text class="mono-strong" x="28" y="241">student_experiment_report.md</text>
+    <text class="body" x="260" y="241">Báo cáo nhóm đã tổng hợp.</text>
+  </g>
+
+  <g transform="translate(575,380)">
+    <rect class="card" x="0" y="0" width="450" height="270" rx="18"/>
+    <rect class="purple" x="22" y="22" width="150" height="32" rx="16"/>
+    <text class="pill" x="45" y="44">Mã thực thi</text>
+    <text class="section-title" x="22" y="86">Entry point và CQD-SHAP</text>
+    <line class="muted-line" x1="22" y1="105" x2="428" y2="105"/>
+    <text class="mono-strong" x="28" y="136">evaluation.py</text>
+    <text class="body" x="165" y="136">Chạy necessary/sufficient evaluation.</text>
+    <text class="mono-strong" x="28" y="171">shapley.py</text>
+    <text class="body" x="165" y="171">Tính Shapley values cho query atoms.</text>
+    <text class="mono-strong" x="28" y="206">xcqa_torch.py</text>
+    <text class="body" x="165" y="206">Kết hợp symbolic và neural reasoning.</text>
+    <text class="mono-strong" x="28" y="241">symbolic_torch.py</text>
+    <text class="body" x="185" y="241">Thực thi symbolic trên graph.</text>
+  </g>
+
+  <g transform="translate(1070,380)">
+    <rect class="card" x="0" y="0" width="450" height="270" rx="18"/>
+    <rect class="green" x="22" y="22" width="150" height="32" rx="16"/>
+    <text class="pill" x="43" y="44">Core modules</text>
+    <text class="section-title" x="22" y="86">Query, graph và thư viện KBC</text>
+    <line class="muted-line" x1="22" y1="105" x2="428" y2="105"/>
+    <text class="mono-strong" x="28" y="136">query.py, graph.py</text>
+    <text class="body" x="215" y="136">Biểu diễn query và graph.</text>
+    <text class="mono-strong" x="28" y="171">utils.py</text>
+    <text class="body" x="215" y="171">Load query, tính metric, helper chung.</text>
+    <text class="mono-strong" x="28" y="206">kbc/</text>
+    <text class="body" x="215" y="206">Models, datasets, metrics, CQD beam/CO.</text>
+    <text class="mono-strong" x="28" y="241">cqd_link_prediction.py</text>
+    <text class="body" x="230" y="241">Link prediction nền cho CQD.</text>
+  </g>
+
+  <g transform="translate(80,700)">
+    <rect class="card" x="0" y="0" width="450" height="250" rx="18"/>
+    <rect class="orange" x="22" y="22" width="150" height="32" rx="16"/>
+    <text class="pill" x="43" y="44">Data &amp; model</text>
+    <text class="section-title" x="22" y="86">Tài nguyên cần tải trước khi chạy</text>
+    <line class="muted-line" x1="22" y1="105" x2="428" y2="105"/>
+    <text class="mono-strong" x="28" y="136">data/</text>
+    <text class="body" x="150" y="136">Chứa FB15k-237, NELL995, bản +H.</text>
+    <text class="mono-strong" x="28" y="171">models/</text>
+    <text class="body" x="150" y="171">Pretrained CQD models cho Freebase/NELL.</text>
+    <text class="small" x="28" y="213">Ghi chú: workspace hiện tại chưa có hai thư mục này ở repo root.</text>
+  </g>
+
+  <g transform="translate(575,700)">
+    <rect class="card" x="0" y="0" width="450" height="250" rx="18"/>
+    <rect class="red" x="22" y="22" width="146" height="32" rx="16"/>
+    <text class="pill" x="43" y="44">Kết quả</text>
+    <text class="section-title" x="22" y="86">Log, CSV và biểu đồ</text>
+    <line class="muted-line" x1="22" y1="105" x2="428" y2="105"/>
+    <text class="mono-strong" x="28" y="136">evaluation_benchmark1/</text>
+    <text class="body" x="250" y="136">Log Benchmark 1.</text>
+    <text class="mono-strong" x="28" y="171">evaluation_benchmark2/</text>
+    <text class="body" x="250" y="171">Log Benchmark 2.</text>
+    <text class="mono-strong" x="28" y="206">report_artifacts/</text>
+    <text class="body" x="250" y="206">CSV tổng hợp và plots.</text>
+  </g>
+
+  <g transform="translate(1070,700)">
+    <rect class="card" x="0" y="0" width="450" height="250" rx="18"/>
+    <rect class="gray" x="22" y="22" width="150" height="32" rx="16"/>
+    <text class="pill" x="43" y="44">Notebook</text>
+    <text class="section-title" x="22" y="86">Demo và case study</text>
+    <line class="muted-line" x1="22" y1="105" x2="428" y2="105"/>
+    <text class="mono-strong" x="28" y="136">example_usage*.ipynb</text>
+    <text class="body" x="250" y="136">Demo chạy nhanh/Colab.</text>
+    <text class="mono-strong" x="28" y="171">resume_colab_*.ipynb</text>
+    <text class="body" x="250" y="171">Resume output Shapley.</text>
+    <text class="mono-strong" x="28" y="206">examples/</text>
+    <text class="body" x="250" y="206">Case study minh họa paper.</text>
+  </g>
+
+  <g transform="translate(80,992)">
+    <rect class="flow-card" x="0" y="0" width="1440" height="54" rx="16"/>
+    <text class="body" x="24" y="34">Cách đọc nhanh: </text>
+    <text class="mono-strong" x="130" y="34">cqd.txt</text>
+    <text class="body" x="202" y="34">giải thích ý tưởng paper; </text>
+    <text class="mono-strong" x="392" y="34">evaluation.py</text>
+    <text class="body" x="510" y="34">là script chạy; </text>
+    <text class="mono-strong" x="625" y="34">shapley.py</text>
+    <text class="body" x="720" y="34">là lõi CQD-SHAP; </text>
+    <text class="mono-strong" x="870" y="34">evaluation_benchmark*/</text>
+    <text class="body" x="1075" y="34">và </text>
+    <text class="mono-strong" x="1105" y="34">report_artifacts/</text>
+    <text class="body" x="1260" y="34">lưu kết quả báo cáo.</text>
+  </g>
+</svg>
